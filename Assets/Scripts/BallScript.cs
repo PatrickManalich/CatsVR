@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/* Placed on games objects with the 'Ball' tag. Simply causes the ball to bounce when colliding with other game objects.
+ * Also has a function 'OnEnable()' which places the balls around the 'BallIcon' and adds a random impulse force.
+ */
+
 public class BallScript : MonoBehaviour {
 
     private Rigidbody rb;
@@ -18,9 +22,9 @@ public class BallScript : MonoBehaviour {
     void OnEnable()
     {
         rb = GetComponent<Rigidbody>();
-        if (name == "Ball Blue")
+        if (name == "BallBlue")
             transform.position = new Vector3(-1f, 0.8f, -0.15f);
-        else if (name == "Ball Green")
+        else if (name == "BallGreen")
             transform.position = new Vector3(-1f, 0.55f,0.15f);
         else
             transform.position = new Vector3(-1f, 0.3f, 0f);

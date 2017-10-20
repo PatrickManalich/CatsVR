@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/* Placed on the empty game object 'Intro'. Handles the introduction cutscene. Sets the unnecessary game objects
+ * inactive, slowly increases the intensity of the lighting, and plays the audio clips in order. Also sets 'snowball'
+ * to kinematic, plays snowball's intro animation, and causes snowball the follow the path points. After the 
+ * introduction cutscene has finished, the necessary scripts and game objects are set active again.
+ */ 
+
 public class IntroScript : MonoBehaviour {
 
     private ControllerScript controllerScript;
@@ -48,10 +54,10 @@ public class IntroScript : MonoBehaviour {
         foreach (GameObject block in blocks) { block.SetActive(false); }
         snowballBedRigidBody = GameObject.Find("SnowballBed").GetComponent<Rigidbody>();
         snowballBedRigidBody.isKinematic = true;
-        mainSongAudioSource = GameObject.Find("Main Song").GetComponent<AudioSource>();
-        introSongAudioSource = GameObject.Find("Intro Song").GetComponent<AudioSource>();
+        mainSongAudioSource = GameObject.Find("MainSong").GetComponent<AudioSource>();
+        introSongAudioSource = GameObject.Find("IntroSong").GetComponent<AudioSource>();
         introSongAudioSource.Play();
-        pointLight = GameObject.Find("Point Light").GetComponent<Light>();
+        pointLight = GameObject.Find("PointLight").GetComponent<Light>();
         pointLight.intensity = 0;
         crosshair = GameObject.Find("Crosshair");
         crosshair.SetActive(false);
@@ -62,9 +68,11 @@ public class IntroScript : MonoBehaviour {
         quads = GameObject.FindGameObjectsWithTag("Quad");
         foreach (GameObject quad in quads) { quad.SetActive(false); }
 
-        pathPointGameObjects = GameObject.FindGameObjectsWithTag("Path Point");
+        pathPointGameObjects = GameObject.FindGameObjectsWithTag("PathPoint");
         pathPointTransforms = new Transform[pathPointGameObjects.Length];
-        for (int i = 0; i < pathPointTransforms.Length; i++) {  pathPointTransforms[int.Parse(pathPointGameObjects[i].name.Substring(12, 1))] = pathPointGameObjects[i].transform; }
+        for (int i = 0; i < pathPointTransforms.Length; i++) {
+            pathPointTransforms[int.Parse(pathPointGameObjects[i].name.Substring(9, 1))] = pathPointGameObjects[i].transform;
+        }
         currPathPoint = 0;
         targetPathPoint = null;
         pathFinished = false;
@@ -77,19 +85,19 @@ public class IntroScript : MonoBehaviour {
 	void Update () {
         if (!introSongFinished)
         {
-            if (introSongAudioSource.time > 31)  //play audio source of cat meowing after 31 seconds into the intro song
+            if (introSongAudioSource.time > 31)  // Play audio source of cat meowing after 31 seconds into the intro song
             {
                 snowballAudioSource.Play();
                 introSongFinished = true;
             }
-            else if (introSongAudioSource.time > 24)  //start moving in position after 24 seconds into the intro song
+            else if (introSongAudioSource.time > 24)  // Start moving in position after 24 seconds into the intro song
             {
                 if (!pathFinished)
                     FollowPath();
                 else
                     snowball.transform.forward = Vector3.RotateTowards(snowball.transform.forward, Vector3.back, 2.0f * Time.deltaTime, 0.0f);
             }
-            else if(introSongAudioSource.time < 4)  //brighten lights during the first 4 seconds of the intro song
+            else if(introSongAudioSource.time < 4)  // Brighten lights during the first 4 seconds of the intro song
             {
                 if (pointLight.intensity < 1)
                     pointLight.intensity += 0.01f;
@@ -110,7 +118,8 @@ public class IntroScript : MonoBehaviour {
         if (targetPathPoint == null) //first iteration
             targetPathPoint = pathPointTransforms[currPathPoint];
 
-        snowball.transform.forward = Vector3.RotateTowards(snowball.transform.forward, targetPathPoint.position - snowball.transform.position, 2.0f * Time.deltaTime, 0.0f);
+        snowball.transform.forward = Vector3.RotateTowards(snowball.transform.forward, targetPathPoint.position - snowball.transform.position, 
+            2.0f * Time.deltaTime, 0.0f);
         snowball.transform.position = Vector3.MoveTowards(snowball.transform.position, targetPathPoint.position, 0.5f * Time.deltaTime);
 
         if (snowball.transform.position == targetPathPoint.position)

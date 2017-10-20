@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/* Placed on a game object with the 'Cat' tag. When active, the cat will chase after the laser dot sprite
+ * when the 'Follow()' function is being called. The cat will jump at the laser dot sprite when the 'Jump()'
+ * function is called. The cat will pounce on the laser dot sprite when the 'Pounce()' function is called.
+ */ 
+
 public class CatLaserScript : MonoBehaviour {
 
     private float speed;
@@ -48,14 +53,14 @@ public class CatLaserScript : MonoBehaviour {
             {
                 transform.LookAt(new Vector3(target.x, -1, target.z));
                 transform.position = Vector3.MoveTowards(transform.position, new Vector3(target.x, -1, target.z), speed * Time.deltaTime);
-                prevLaserHeight = target.y + 2.0f; //2 is half of wall height
+                prevLaserHeight = target.y + 2.0f; // 2 is half of wall height
             }
         }
     }
 
-    public void Jump()
+    public void Jump()  // Prevents a double jump if 'time' reaches 'timeWait' at exact moment of jumping
     {
-        time = 0; //prevents a double jump if time reaches timeWait at exact moment of jumping
+        time = 0;
         timeWait = 65;
         free = false;
         if (Random.Range(0, 2) == 0)
@@ -74,9 +79,9 @@ public class CatLaserScript : MonoBehaviour {
 
     public void Pounce()
     {
-        if (free)
+        if (free)   // Prevents a double pounce if 'time' reaches 'timeWait' at exact moment of jumping
         {
-            time = 0; //prevents a double pounce if time reaches timeWait at exact moment of jumping
+            time = 0;
             timeWait = 50;
             free = false;
             rb.AddForce(Vector3.up * 2 + transform.forward * 0.2f, ForceMode.Impulse);

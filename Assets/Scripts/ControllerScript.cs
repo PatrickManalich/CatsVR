@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/* Used for developing and debugging in desktop mode. Allows the developer to look around with 
+ * arrow keys.
+ */ 
+
 public class ControllerScript : MonoBehaviour {
 
     void Start()

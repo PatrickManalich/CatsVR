@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/* Placed on the empty game object 'Crosshair'. Uses a GUI to alternate the crosshair between a hover,
+ * click, and initial state. Raycasts and checks to see if a game object is clickable. If a game object
+ * is clickable and is being hovered over, the clicked game object will either be grabbed, thrown, or
+ * clicked.
+ */ 
+
 public class CrosshairScript : MonoBehaviour {
 
-//    public Texture2D crosshairInit;
-//    public Texture2D crosshairHover;
-//    public Texture2D crosshairClick;
-    //private int width;
-    //private int height;
-    //private Rect position;
-    //private float recticleSize;
     private GameObject mainCamera;
     private bool hover;
     private bool click;
@@ -25,18 +24,11 @@ public class CrosshairScript : MonoBehaviour {
 
     void Start()
     {
-        //recticleSize = 0.125f;
-        //if (crosshairInit != null)
-        //{
-        //    width = crosshairInit.width;
-        //    height = crosshairInit.height;
-        //    position = new Rect((Screen.width - (width * recticleSize)) / 2, (Screen.height - (height * recticleSize)) / 2, (width * recticleSize), (height * recticleSize));
-        //}
         mainCamera = GameObject.Find("Main Camera");
         hover = false;
         click = false;
         objectHeld = false;
-        clickableTags = new string[5];    //change each time
+        clickableTags = new string[5];    // Change each time
         clickableTags[0] = "Cat";
         clickableTags[1] = "Block";
         clickableTags[2] = "Ball";
@@ -53,7 +45,8 @@ public class CrosshairScript : MonoBehaviour {
     {
         if (objectHeld)
         {
-            heldGameObject.transform.position = Vector3.Lerp(heldGameObject.transform.position, mainCamera.transform.position + mainCamera.transform.forward * 0.75f, Time.deltaTime * 10);
+            heldGameObject.transform.position = Vector3.Lerp(heldGameObject.transform.position, 
+                mainCamera.transform.position + mainCamera.transform.forward * 0.75f, Time.deltaTime * 10);
             heldGameObject.transform.LookAt(mainCamera.transform.position);
 
         }
@@ -94,7 +87,7 @@ public class CrosshairScript : MonoBehaviour {
                     if (hit.collider.tag == clickableTags[i])
                     {
                         found = true;
-                        i = clickableTags.Length; //exit loop
+                        i = clickableTags.Length; // Exit loop
                     }
                 }
                 if (found)
@@ -119,8 +112,6 @@ public class CrosshairScript : MonoBehaviour {
                         quad.SetActive(false);
                 }
             }
-                
-                //GUI.DrawTexture(position, crosshairInit);
             else
             {
                 if (click)
@@ -133,7 +124,6 @@ public class CrosshairScript : MonoBehaviour {
                             quad.SetActive(false);
                     }
                 }
-                //GUI.DrawTexture(position, crosshairClick);
                 else
                 {
                     foreach (GameObject quad in quads)
@@ -144,7 +134,6 @@ public class CrosshairScript : MonoBehaviour {
                             quad.SetActive(false);
                     }
                 }
-                //GUI.DrawTexture(position, crosshairHover);
             }
         }
     }

@@ -2,11 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/* Placed on the empty game object 'Icon Controller'. Used for storing all icons and handling when one of them is 
+ * clicked on by the crosshair. If an icon is clicked on, will cause the icon to rotate and handle its specific
+ * action.
+ */ 
+
 public class IconControllerScript : MonoBehaviour {
 
     private Dictionary<string, GameObject> icons = new Dictionary<string, GameObject>();
     private Dictionary<string, bool> clickedDatabase = new Dictionary<string, bool>();
-    private bool free; //used for efficiency, so you just have to check if clicked during update instead of going through all icons
+    private bool free; // Used for efficiency, so update checks all icons only if clicked
     private string clickedName;
     private float rotationLeft;
 
@@ -60,7 +65,7 @@ public class IconControllerScript : MonoBehaviour {
             free = false;
             if(clickedName == "IconBalls")
             {
-                if (!clickedDatabase[clickedName])  //if not clicked
+                if (!clickedDatabase[clickedName])  // If not clicked
                 {
                     foreach (GameObject ball in balls) { ball.SetActive(true); }
                     clickedDatabase[clickedName] = true;
@@ -78,7 +83,7 @@ public class IconControllerScript : MonoBehaviour {
             }
             else if (clickedName == "IconLaser")
             {
-                if (!clickedDatabase[clickedName])  //if not clicked
+                if (!clickedDatabase[clickedName])  // If not clicked
                 {
                     crosshairScript.SetVisible(false);
                     laserPointer.SetActive(true);

@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/* Placed on the game object 'Laser', which contains the laser dot sprite. Raycasts from the
+ * 'mainCamera' and computes the new position. Also tells the 'catLaserScript' to either
+ * follow the laser or pounce on the laser.
+ */
+
 public class LaserScript : MonoBehaviour {
 
     private GameObject mainCamera;

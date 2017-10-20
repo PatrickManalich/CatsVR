@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/* Placed on an empty game object named 'Simplify'. Used for developing and debugging. Helps 
+ * to simplify the scene by deactivating game objects of the developer's choosing. Only game
+ * objects whose names are in the 'allowed' array will be activated.
+ */
+
 public class SimplifyScript : MonoBehaviour {
 
     private GameObject[] allGameObjects;
@@ -9,7 +14,7 @@ public class SimplifyScript : MonoBehaviour {
     
 	void Start () {
         allGameObjects = GameObject.FindObjectsOfType<GameObject>();
-        allowed = new string[11];    //change each time
+        allowed = new string[11];    // Change each time
         allowed[0] = "Cat";
         allowed[1] = "Wall";
         allowed[2] = "Base";

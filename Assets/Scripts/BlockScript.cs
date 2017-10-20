@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/* Placed on game objects with the 'Block' tag. Simply causes the block to bounce when colliding with other game objects.
+ */ 
+
 public class BlockScript : MonoBehaviour {
 
     private Rigidbody rb;
