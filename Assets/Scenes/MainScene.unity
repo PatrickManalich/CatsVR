@@ -128,7 +128,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1ee57b0cfa057304abead6c28bedcdf2, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1ee57b0cfa057304abead6c28bedcdf2, type: 3}
       propertyPath: m_LocalScale.x
@@ -179,12 +179,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 159692874}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.032704, y: -0.41851878, z: 4.1278005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 745420058}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &159692876
 MonoBehaviour:
@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 206312118}
   - component: {fileID: 206312117}
   m_Layer: 0
-  m_Name: Wall Ceiling
+  m_Name: WallCeiling
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -463,8 +463,8 @@ GameObject:
   m_Component:
   - component: {fileID: 311079160}
   m_Layer: 0
-  m_Name: Path Point (5)
-  m_TagString: Path Point
+  m_Name: PathPoint5
+  m_TagString: PathPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 329957552}
   - component: {fileID: 329957551}
   m_Layer: 0
-  m_Name: Base Right
+  m_Name: BaseRight
   m_TagString: Base
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -572,7 +572,7 @@ GameObject:
   m_Component:
   - component: {fileID: 409401167}
   m_Layer: 0
-  m_Name: Base Folder
+  m_Name: BaseFolder
   m_TagString: Folder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -593,7 +593,7 @@ Transform:
   - {fileID: 605429754}
   - {fileID: 501400337}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &413295070
 GameObject:
@@ -628,12 +628,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 413295070}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.032704, y: -0.41851878, z: 4.1278005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 745420058}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &431347660
 Prefab:
@@ -690,7 +690,7 @@ GameObject:
   m_Component:
   - component: {fileID: 461678098}
   m_Layer: 0
-  m_Name: Ball Folder
+  m_Name: BallFolder
   m_TagString: Folder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -710,7 +710,7 @@ Transform:
   - {fileID: 287604336}
   - {fileID: 1474564257}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &462454284 stripped
 Transform:
@@ -729,7 +729,7 @@ GameObject:
   - component: {fileID: 501400335}
   - component: {fileID: 501400334}
   m_Layer: 0
-  m_Name: Base Left
+  m_Name: BaseLeft
   m_TagString: Base
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -946,8 +946,8 @@ GameObject:
   m_Component:
   - component: {fileID: 601301785}
   m_Layer: 0
-  m_Name: Path Point (4)
-  m_TagString: Path Point
+  m_Name: PathPoint4
+  m_TagString: PathPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -977,7 +977,7 @@ GameObject:
   - component: {fileID: 605429752}
   - component: {fileID: 605429751}
   m_Layer: 0
-  m_Name: Base Back
+  m_Name: BaseBack
   m_TagString: Base
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1060,7 +1060,7 @@ GameObject:
   m_Component:
   - component: {fileID: 627691024}
   m_Layer: 0
-  m_Name: Path Point Folder
+  m_Name: PathPointFolder
   m_TagString: Folder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1084,7 +1084,7 @@ Transform:
   - {fileID: 311079160}
   - {fileID: 1599773828}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &701283732
 Prefab:
@@ -1123,7 +1123,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5186a6fa9ea3fa54db4f288631f792af, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5186a6fa9ea3fa54db4f288631f792af, type: 3}
       propertyPath: m_LocalScale.x
@@ -1156,6 +1156,40 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5186a6fa9ea3fa54db4f288631f792af, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &745420057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 745420058}
+  m_Layer: 0
+  m_Name: InvisibleGameObjects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &745420058
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 745420057}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.032704, y: 0.41851878, z: -4.1278005}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 159692875}
+  - {fileID: 880424700}
+  - {fileID: 1330884801}
+  - {fileID: 413295072}
+  - {fileID: 1085106951}
+  - {fileID: 1887067017}
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &755665759
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,7 +1202,7 @@ GameObject:
   - component: {fileID: 755665761}
   - component: {fileID: 755665760}
   m_Layer: 0
-  m_Name: Wall Left
+  m_Name: WallLeft
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1296,7 +1330,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1149261702812258, guid: 3e89b6c9207637445b84e323ebe4c3bc, type: 2}
       propertyPath: m_Name
-      value: Block (1)
+      value: Block1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e89b6c9207637445b84e323ebe4c3bc, type: 2}
@@ -1310,8 +1344,8 @@ GameObject:
   m_Component:
   - component: {fileID: 774094897}
   m_Layer: 0
-  m_Name: Path Point (1)
-  m_TagString: Path Point
+  m_Name: PathPoint1
+  m_TagString: PathPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1366,7 +1400,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 741a84d59b2d7fe4e8b766e04de5e3a9, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 741a84d59b2d7fe4e8b766e04de5e3a9, type: 3}
       propertyPath: m_LocalScale.x
@@ -1407,7 +1441,7 @@ GameObject:
   - component: {fileID: 879746582}
   - component: {fileID: 879746581}
   m_Layer: 0
-  m_Name: Wall Front
+  m_Name: WallFront
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1509,12 +1543,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 880424698}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.032704, y: -0.41851878, z: 4.1278005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 745420058}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &905276041 stripped
 GameObject:
@@ -1714,7 +1748,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1739240254427036, guid: 4ea55ee340415534f831a77b7b41a4f9, type: 2}
       propertyPath: m_Name
-      value: Ball Red
+      value: BallRed
       objectReference: {fileID: 0}
     - target: {fileID: 54573195402279396, guid: 4ea55ee340415534f831a77b7b41a4f9,
         type: 2}
@@ -1792,7 +1826,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1149261702812258, guid: 3e89b6c9207637445b84e323ebe4c3bc, type: 2}
       propertyPath: m_Name
-      value: Block (0)
+      value: Block0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e89b6c9207637445b84e323ebe4c3bc, type: 2}
@@ -1838,7 +1872,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1149261702812258, guid: 3e89b6c9207637445b84e323ebe4c3bc, type: 2}
       propertyPath: m_Name
-      value: Block (7)
+      value: Block7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e89b6c9207637445b84e323ebe4c3bc, type: 2}
@@ -1853,7 +1887,7 @@ GameObject:
   - component: {fileID: 1085106951}
   - component: {fileID: 1085106950}
   m_Layer: 0
-  m_Name: Main Song
+  m_Name: MainSong
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1945,11 +1979,11 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1085106949}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.032704, y: -0.41851878, z: 4.1278005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 745420058}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1176149784
@@ -1961,8 +1995,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1176149785}
   m_Layer: 0
-  m_Name: Path Point (3)
-  m_TagString: Path Point
+  m_Name: PathPoint3
+  m_TagString: PathPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2021,7 +2055,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1739240254427036, guid: 4ea55ee340415534f831a77b7b41a4f9, type: 2}
       propertyPath: m_Name
-      value: Ball Blue
+      value: BallBlue
       objectReference: {fileID: 0}
     - target: {fileID: 4885032353028368, guid: 4ea55ee340415534f831a77b7b41a4f9, type: 2}
       propertyPath: m_LocalScale.x
@@ -2057,7 +2091,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1320646534}
   m_Layer: 0
-  m_Name: Block Folder
+  m_Name: BlockFolder
   m_TagString: Folder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2082,7 +2116,7 @@ Transform:
   - {fileID: 268066445}
   - {fileID: 2028744738}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1330884799
 GameObject:
@@ -2117,12 +2151,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1330884799}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.032704, y: -0.41851878, z: 4.1278005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 745420058}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1339265791
 GameObject:
@@ -2136,7 +2170,7 @@ GameObject:
   - component: {fileID: 1339265793}
   - component: {fileID: 1339265792}
   m_Layer: 0
-  m_Name: Wall Floor
+  m_Name: WallFloor
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2251,7 +2285,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1149261702812258, guid: 3e89b6c9207637445b84e323ebe4c3bc, type: 2}
       propertyPath: m_Name
-      value: Block (3)
+      value: Block3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e89b6c9207637445b84e323ebe4c3bc, type: 2}
@@ -2268,7 +2302,7 @@ GameObject:
   - component: {fileID: 1490726411}
   - component: {fileID: 1490726410}
   m_Layer: 0
-  m_Name: Wall Right
+  m_Name: WallRight
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2346,7 +2380,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1494393934}
   m_Layer: 0
-  m_Name: Wall Folder
+  m_Name: WallFolder
   m_TagString: Folder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2369,7 +2403,7 @@ Transform:
   - {fileID: 2023387943}
   - {fileID: 206312120}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1595695954 stripped
 Transform:
@@ -2384,8 +2418,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1599773828}
   m_Layer: 0
-  m_Name: Path Point (6)
-  m_TagString: Path Point
+  m_Name: PathPoint6
+  m_TagString: PathPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2444,7 +2478,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1149261702812258, guid: 3e89b6c9207637445b84e323ebe4c3bc, type: 2}
       propertyPath: m_Name
-      value: Block (6)
+      value: Block6
       objectReference: {fileID: 0}
     - target: {fileID: 4662395987782852, guid: 3e89b6c9207637445b84e323ebe4c3bc, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -2502,7 +2536,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1149261702812258, guid: 3e89b6c9207637445b84e323ebe4c3bc, type: 2}
       propertyPath: m_Name
-      value: Block (5)
+      value: Block5
       objectReference: {fileID: 0}
     - target: {fileID: 4662395987782852, guid: 3e89b6c9207637445b84e323ebe4c3bc, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -2534,7 +2568,7 @@ GameObject:
   - component: {fileID: 1681021074}
   - component: {fileID: 1681021073}
   m_Layer: 0
-  m_Name: Point Light
+  m_Name: PointLight
   m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2628,7 +2662,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1149261702812258, guid: 3e89b6c9207637445b84e323ebe4c3bc, type: 2}
       propertyPath: m_Name
-      value: Block (4)
+      value: Block4
       objectReference: {fileID: 0}
     - target: {fileID: 4662395987782852, guid: 3e89b6c9207637445b84e323ebe4c3bc, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -2686,7 +2720,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1149261702812258, guid: 3e89b6c9207637445b84e323ebe4c3bc, type: 2}
       propertyPath: m_Name
-      value: Block (2)
+      value: Block2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e89b6c9207637445b84e323ebe4c3bc, type: 2}
@@ -2703,7 +2737,7 @@ GameObject:
   - component: {fileID: 1840034338}
   - component: {fileID: 1840034337}
   m_Layer: 0
-  m_Name: Base Front
+  m_Name: BaseFront
   m_TagString: Base
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2782,7 +2816,7 @@ GameObject:
   - component: {fileID: 1887067017}
   - component: {fileID: 1887067016}
   m_Layer: 0
-  m_Name: Intro Song
+  m_Name: IntroSong
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2874,12 +2908,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1887067015}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.032704, y: -0.41851878, z: 4.1278005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 745420058}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1902879035
 Prefab:
@@ -2992,7 +3026,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1739240254427036, guid: 4ea55ee340415534f831a77b7b41a4f9, type: 2}
       propertyPath: m_Name
-      value: Ball Green
+      value: BallGreen
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ea55ee340415534f831a77b7b41a4f9, type: 2}
@@ -3089,8 +3123,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2011078828}
   m_Layer: 0
-  m_Name: Path Point (2)
-  m_TagString: Path Point
+  m_Name: PathPoint2
+  m_TagString: PathPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3120,7 +3154,7 @@ GameObject:
   - component: {fileID: 2023387941}
   - component: {fileID: 2023387940}
   m_Layer: 0
-  m_Name: Wall Back
+  m_Name: WallBack
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3221,8 +3255,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2044024433}
   m_Layer: 0
-  m_Name: Path Point (0)
-  m_TagString: Path Point
+  m_Name: PathPoint0
+  m_TagString: PathPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

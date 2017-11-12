@@ -9,11 +9,11 @@ TagManager:
   - Base
   - Ball
   - Block
-  - Path Point
   - Folder
   - Light
   - Icon
   - Quad
+  - PathPoint
   layers:
   - Default
   - TransparentFX

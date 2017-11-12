@@ -1,0 +1,163 @@
+fileFormatVersion: 2
+guid: 9ddcf64e0e4f44c46b316f94ea6e3e23
+timeCreated: 1510518010
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: back
+    100002: Body
+    100004: BodyController
+    100006: bottom
+    100008: jointBody
+    100010: jointLeft1
+    100012: jointLeft2
+    100014: jointLeft3
+    100016: jointMid
+    100018: jointRight1
+    100020: jointRight2
+    100022: jointRight3
+    100024: jointTail1
+    100026: jointTail2
+    100028: jointTail3
+    100030: jointTail4
+    100032: jointTail5
+    100034: jointTail6
+    100036: jointTailRoot
+    100038: LeftBottomWhisker
+    100040: LeftEye
+    100042: LeftTopWhisker
+    100044: Mouth
+    100046: MouthController
+    100048: MouthJoints
+    100050: Nose
+    100052: RightBottomWhisker
+    100054: RightEye
+    100056: RightTopWhisker
+    100058: //RootNode
+    100060: TailController
+    400000: back
+    400002: Body
+    400004: BodyController
+    400006: bottom
+    400008: jointBody
+    400010: jointLeft1
+    400012: jointLeft2
+    400014: jointLeft3
+    400016: jointMid
+    400018: jointRight1
+    400020: jointRight2
+    400022: jointRight3
+    400024: jointTail1
+    400026: jointTail2
+    400028: jointTail3
+    400030: jointTail4
+    400032: jointTail5
+    400034: jointTail6
+    400036: jointTailRoot
+    400038: LeftBottomWhisker
+    400040: LeftEye
+    400042: LeftTopWhisker
+    400044: Mouth
+    400046: MouthController
+    400048: MouthJoints
+    400050: Nose
+    400052: RightBottomWhisker
+    400054: RightEye
+    400056: RightTopWhisker
+    400058: //RootNode
+    400060: TailController
+    2300000: LeftBottomWhisker
+    2300002: LeftEye
+    2300004: LeftTopWhisker
+    2300006: Nose
+    2300008: RightBottomWhisker
+    2300010: RightEye
+    2300012: RightTopWhisker
+    3300000: LeftBottomWhisker
+    3300002: LeftEye
+    3300004: LeftTopWhisker
+    3300006: Nose
+    3300008: RightBottomWhisker
+    3300010: RightEye
+    3300012: RightTopWhisker
+    4300000: Body
+    4300002: RightEye
+    4300004: LeftEye
+    4300006: Nose
+    4300008: Mouth
+    4300010: LeftBottomWhisker
+    4300012: RightBottomWhisker
+    4300014: LeftTopWhisker
+    4300016: RightTopWhisker
+    9500000: //RootNode
+    13700000: Body
+    13700002: Mouth
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
